@@ -4,6 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            theme: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body class="h-full">
   <!-- This example requires Tailwind CSS v2.0+ -->
@@ -38,7 +49,7 @@
   </div>
 </div>
   
-  <div class="prose mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+  <div class="prose mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl pt-8">
     {{ content }}
   </div>
   
