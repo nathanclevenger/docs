@@ -91,7 +91,10 @@
 
     </div>
     <div class="mt-8 md:mt-0 md:order-1">
-      <p class="text-center text-base text-gray-400">Copyright &copy; {{ 'now' | date: "%Y" }} {{ site.owner | default: 'Nathan Clevenger' }}. <a href="{{ site.github.repository_url }}/blob/{{ site.github.source.branch }}/LICENSE"><img src="https://img.shields.io/badge/License-{{ site.github.license.spdx_id }}-blue.svg" /></a>.</p>
+      <p class="text-center text-base text-gray-400">Copyright &copy; {{ 'now' | date: "%Y" }} {{ site.owner | default: 'Nathan Clevenger' }}. 
+        <a href="{{ site.github.repository_url }}/blob/{{ site.github.source.branch }}/LICENSE"><img src="https://img.shields.io/badge/License-{{ site.github.license.spdx_id }}-blue.svg" /></a>.
+        <iframe src="https://ghbtns.com/github-btn.html?user={{ site.github.owner_name }}&amp;repo={{ site.github.repository_name }}&amp;type=star&amp;count=true&amp;size=large" frameborder="0" scrolling="0" width="160" height="30" title="GitHub"></iframe>
+      </p>
     </div>
   </div>
 </footer>
