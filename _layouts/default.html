@@ -16,6 +16,9 @@
     }
   </script>
 <!--   <link href="https://unpkg.com/prismjs@v1.x/themes/prism.css" rel="stylesheet" /> -->
+  <script type="text/javascript"
+  src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js">
+</script>
 </head>
 <body class="h-full">
   <!-- This example requires Tailwind CSS v2.0+ -->
@@ -113,4 +116,16 @@
 <!-- <script src="https://unpkg.com/prismjs@v1.x/components/prism-core.min.js"></script>
 <script src="https://unpkg.com/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script> -->
 </body>
+<script>
+var config = {
+  startOnLoad:true,
+  theme: 'dark',
+  flowchart:{
+    useMaxWidth:false,
+    htmlLabels:true
+  }
+};
+mermaid.initialize(config);
+window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
 </html>
