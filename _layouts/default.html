@@ -19,14 +19,6 @@
   <script type="text/javascript"
   src="https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js">
 </script>
-
-<script>
-  window.addEventListener("load", function(){
-    mermaid.initialize({
-        theme: 'forest'
-    });
-});
-</script>
 </head>
 <body class="h-full">
   <!-- This example requires Tailwind CSS v2.0+ -->
@@ -121,7 +113,17 @@
     </div>
   </div>
 </footer>
-<!-- <script src="https://unpkg.com/prismjs@v1.x/components/prism-core.min.js"></script>
-<script src="https://unpkg.com/prismjs@v1.x/plugins/autoloader/prism-autoloader.min.js"></script> -->
 </body>
+<script>
+var config = {
+    startOnLoad:true,
+    theme: 'forest',
+    flowchart:{
+            useMaxWidth:false,
+            htmlLabels:true
+        }
+};
+mermaid.initialize(config);
+window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
 </html>
