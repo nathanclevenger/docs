@@ -14,7 +14,6 @@ icon: 🚀
 ```
 
 
-
 ```
 export default {
   fetch: (req, env, ctx) => env.DO.fetch(req.clone())
